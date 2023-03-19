@@ -1,28 +1,27 @@
 <?php 
-  //memanggil file conn.php yang berisi koneski ke database
-  //dengan include, semua kode dalam file conn.php dapat digunakan pada file index.php
-  include ('conn.php'); 
+//memanggil file conn.php yang berisi koneski ke database
+//dengan include, semua kode dalam file conn.php dapat digunakan pada file index.php
+include ('conn.php'); 
 
-  $status = '';
-  //melakukan pengecekan apakah ada form yang dipost
-  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $customerNumber = $_POST['customerNumber'];
-    $customerName = $_POST['customerName'];
-    $contactLastName = $_POST['contactLastName'];
-    $contactFirstName = $_POST['contactFirstName'];
-    $phone = $_POST['phone'];
-    $addressLine1 = $_POST['addressLine1'];
-    $addressLine2 = $_POST['addressLine2'];
-    $city = $_POST['city'];
-    $state = $_POST['state'];
-    $postalCode = $_POST['postalCode'];
-    $country = $_POST['country'];
-    $salesRepEmployeeNumber = $_POST['salesRepEmployeeNumber'];
-    $creditLimit = $_POST['creditLimit'];
+$status = '';
+//melakukan pengecekan apakah ada form yang dipost
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $customerNumber = $_POST['customerNumber'];
+      $customerName = $_POST['customerName'];
+      $contactLastName = $_POST['contactLastName'];
+      $contactFirstName = $_POST['contactFirstName'];
+      $phone = $_POST['phone'];
+      $addressLine1 = $_POST['addressLine1'];
+      $addressLine2 = $_POST['addressLine2'];
+      $city = $_POST['city'];
+      $state = $_POST['state'];
+      $postalCode = $_POST['postalCode'];
+      $country = $_POST['country'];
+      $salesRepEmployeeNumber = $_POST['salesRepEmployeeNumber'];
+      $creditLimit = $_POST['creditLimit'];
       //query SQL
-      $query = "INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2,
-      city, 'state', postalCode, country, salesRepEmployeeNumber, creditLimit ) VALUES ('$customerNumber', '$customerName', '$contactLastName', 
-      '$contactFirstName', '$phone', '$addressLine1', '$addressLine2', '$city',  '$state',  '$postalCode',  '$country', '$salesRepEmployeeNumber',  '$creditLimit')"; 
+      $query = "INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit) 
+      VALUES('$customerNumber','$customerName','$contactLastName','$contactFirstName','$phone','$addressLine1','$addressLine2','$city','$state','$postalCode','$country','$salesRepEmployeeNumber','$creditLimit')"; 
 
       //eksekusi query
       $result = mysqli_query(connection(),$query);

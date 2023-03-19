@@ -95,7 +95,7 @@
                     <td><?php echo $data['MSRP'];  ?></td>
                     <td>
                       <a href="<?php echo "updateproduct.php?productCode=".$data['productCode']; ?>" class="btn btn-outline-warning btn-sm"> Update</a>
-                      &nbsp;&nbsp;
+                      &nbsp;
                       <a href="<?php echo "delete.php?productCode=".$data['productCode']; ?>" class="btn btn-outline-danger btn-sm"> Delete</a>
                     </td>
                   </tr>

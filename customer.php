@@ -103,7 +103,7 @@
                     <td><?php echo $data['creditLimit'];  ?></td>
                     <td>
                       <a href="<?php echo "updatecustomer.php?customerNumber=".$data['customerNumber']; ?>" class="btn btn-outline-warning btn-sm"> Update</a>
-                      &nbsp;&nbsp;
+                      &nbsp;
                       <a href="<?php echo "delete.php?customerNumber=".$data['customerNumber']; ?>" class="btn btn-outline-danger btn-sm"> Delete</a>
                     </td>
                   </tr>
