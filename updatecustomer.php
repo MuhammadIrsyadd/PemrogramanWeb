@@ -146,7 +146,31 @@
             </div>
             <div class="form-group">
               <label>Sales Emp. Num.</label>
-              <input type="text" class="form-control" placeholder="Sales Emp. Num." name="salesRepEmployeeNumber" value="<?php echo $data['salesRepEmployeeNumber'];  ?>" required="required">
+              <select class="custom-select" name="salesRepEmployeeNumber" value="<?php echo $data['salesRepEmployeeNumber']; ?> required="required">
+                <option value="">Pilih Salah Satu</option>
+                <option value="1056" <?php echo $data['salesRepEmployeeNumber'] == 1056 ? "selected" : ""; ?>>1056</option>
+                <option value="1002" <?php echo $data['salesRepEmployeeNumber'] == 1002 ? "selected" : ""; ?>>1002</option> 
+                <option value="1076" <?php echo $data['salesRepEmployeeNumber'] == 1076 ? "selected" : ""; ?>>1076</option>
+                <option value="1088" <?php echo $data['salesRepEmployeeNumber'] == 1088 ? "selected" : ""; ?>>1088</option>
+                <option value="1102" <?php echo $data['salesRepEmployeeNumber'] == 1102 ? "selected" : ""; ?>>1102</option>
+                <option value="1143" <?php echo $data['salesRepEmployeeNumber'] == 1143 ? "selected" : ""; ?>>1143</option>
+                <option value="1165" <?php echo $data['salesRepEmployeeNumber'] == 1165 ? "selected" : ""; ?>>1165</option>
+                <option value="1166" <?php echo $data['salesRepEmployeeNumber'] == 1166 ? "selected" : ""; ?>>1166</option>
+                <option value="1188" <?php echo $data['salesRepEmployeeNumber'] == 1188 ? "selected" : ""; ?>>1188</option>
+                <option value="1216" <?php echo $data['salesRepEmployeeNumber'] == 1216 ? "selected" : ""; ?>>1216</option>
+                <option value="1286" <?php echo $data['salesRepEmployeeNumber'] == 1286 ? "selected" : ""; ?>>1286</option>
+                <option value="1323" <?php echo $data['salesRepEmployeeNumber'] == 1323 ? "selected" : ""; ?>>1323</option>
+                <option value="1337" <?php echo $data['salesRepEmployeeNumber'] == 1337 ? "selected" : ""; ?>>1337</option>
+                <option value="1370" <?php echo $data['salesRepEmployeeNumber'] == 1370 ? "selected" : ""; ?>>1370</option>
+                <option value="1401" <?php echo $data['salesRepEmployeeNumber'] == 1401 ? "selected" : ""; ?>>1401</option>
+                <option value="1501" <?php echo $data['salesRepEmployeeNumber'] == 1501 ? "selected" : ""; ?>>1501</option>
+                <option value="1611" <?php echo $data['salesRepEmployeeNumber'] == 1611 ? "selected" : ""; ?>>1611</option>
+                <option value="1612" <?php echo $data['salesRepEmployeeNumber'] == 1612 ? "selected" : ""; ?>>1612</option>
+                <option value="1619" <?php echo $data['salesRepEmployeeNumber'] == 1619 ? "selected" : ""; ?>>1619</option>
+                <option value="1621" <?php echo $data['salesRepEmployeeNumber'] == 1621 ? "selected" : ""; ?>>1621</option>
+                <option value="1625" <?php echo $data['salesRepEmployeeNumber'] == 1625 ? "selected" : ""; ?>>1625</option>
+                <option value="1702" <?php echo $data['salesRepEmployeeNumber'] == 1702 ? "selected" : ""; ?>>1702</option>
+              </select>
             </div>
             <div class="form-group">
               <label>Credit Limit</label>

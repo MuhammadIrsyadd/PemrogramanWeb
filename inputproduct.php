@@ -95,7 +95,16 @@
             </div>
             <div class="form-group">
               <label>Product Line</label>
-              <input type="text" class="form-control" placeholder="Product Line" name="productLine" required="required">
+              <select class="custom-select" name="productLine" required="required">
+                <option value="">Pilih Salah Satu</option>
+                <option value="Classic Cars">Classic Cars</option>
+                <option value="Motorcycles">Motorcycles</option>
+                <option value="Planes">Planes</option>
+                <option value="Ships">Ships</option>
+                <option value="Trains">Trains</option>
+                <option value="Truck and Buses">Truck and Buses</option>
+                <option value="Vintage Cars">Vintage Cars</option>
+              </select>
             </div>
             <div class="form-group">
               <label>Product Scale</label>

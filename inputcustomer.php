@@ -135,7 +135,31 @@ $status = '';
             </div>
             <div class="form-group">
               <label>Sales Emp. Num.</label>
-              <input type="text" class="form-control" placeholder="Sales Emp. Num." name="salesRepEmployeeNumber" required="required">
+              <select class="custom-select" name="salesRepEmployeeNumber" required="required">
+                <option value="">Pilih Salah Satu</option>
+                <option value="1002">1002</option>
+                <option value="1056">1056</option>
+                <option value="1076">1076</option>
+                <option value="1088">1088</option>
+                <option value="1102">1102</option>
+                <option value="1143">1143</option>
+                <option value="1165">1165</option>
+                <option value="1166">1166</option>
+                <option value="1188">1188</option>
+                <option value="1216">1216</option>
+                <option value="1286">1286</option>
+                <option value="1323">1323</option>
+                <option value="1337">1337</option>
+                <option value="1370">1370</option>
+                <option value="1401">1401</option>
+                <option value="1501">1501</option>
+                <option value="1611">1611</option>
+                <option value="1612">1612</option>
+                <option value="1619">1619</option>
+                <option value="1621">1621</option>
+                <option value="1625">1625</option>
+                <option value="1702">1702</option>
+              </select>
             </div>
             <div class="form-group">
               <label>Credit Limit</label>

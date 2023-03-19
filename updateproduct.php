@@ -108,7 +108,16 @@
             </div>
             <div class="form-group">
               <label>Product Line</label>
-              <input type="text" class="form-control" placeholder="Product Line" name="productLine" value="<?php echo $data['productLine'];  ?>" required="required">
+              <select class="custom-select" name="productLine" value="<?php echo $data['productLine']; ?> required="required">
+                <option value="">Pilih Salah Satu</option>
+                <option value="Classic Cars" <?php echo $data['productLine'] == 'Classic Cars' ? "selected" : ""; ?>>Classic Cars</option>
+                <option value="Motorcycles" <?php echo $data['productLine'] == 'Motorcycles' ? "selected" : ""; ?>>Motorcycles</option>
+                <option value="Planes" <?php echo $data['productLine'] == 'Planes' ? "selected" : ""; ?>>Planes</option>
+                <option value="Ships" <?php echo $data['productLine'] == 'Ships' ? "selected" : ""; ?>>Ships</option>
+                <option value="Trains" <?php echo $data['productLine'] == 'Trains' ? "selected" : ""; ?>>Trains</option>
+                <option value="Truck and Buses" <?php echo $data['productLine'] == 'Truck and Buses' ? "selected" : ""; ?>>Truck and Buses</option>
+                <option value="Vintage Cars" <?php echo $data['productLine'] == 'Vintage Cars' ? "selected" : ""; ?>>Vintage Cars</option>
+              </select>
             </div>
             <div class="form-group">
               <label>Product Scale</label>
