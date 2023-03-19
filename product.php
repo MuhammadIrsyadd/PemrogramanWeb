@@ -45,6 +45,19 @@
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <?php 
+            //mengecek apakah proses update dan delete sukses/gagal
+            if (@$_GET['status']!==NULL) {
+              $status = $_GET['status'];
+              if ($status=='ok') {
+                echo '<br><br><div class="alert alert-success" role="alert">Data Product berhasil di-update</div>';
+              }
+              elseif($status=='err'){
+                echo '<br><br><div class="alert alert-danger" role="alert">Data Product gagal di-update</div>';
+              }
+
+            }
+           ?>
           <h2 style="margin: 30px 0 30px 0;">Data Products</h2>
           <div class="table-responsive">
             <table class="table table-striped table-sm">
