@@ -1,0 +1,212 @@
+.form-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 600px;
+    background: white;
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.69);
+    border-radius: 10px;
+}
+
+.title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+  .form-container label, .form-container input, .form-container textarea, .form-container select {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+  }
+
+  .form-container input, .form-container textarea, .form-container select{
+    width: 80%;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .left-column {
+    float: left;
+    width: 50%;
+  }
+
+  .right-column {
+    float: left;
+    width: 50%;
+    margin-left: -40px;
+  }
+
+  .checkbox-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Poppins';
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox-container label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  
+  .checkbox-container label::before {
+    content: "\2713";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+    color: #0066ff;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked + label::before {
+    background-color: #0066ff;
+    color: white;
+  }
+
+  .link-active {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .daftar-button {
+    padding: 7px 165px;
+    background-color: transparent;
+    border: 2px solid blue;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+  }
+
+  .daftar-button a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .hapus-button {
+    padding: 7px 150px;
+    background-color: transparent;
+    border: 2px solid red;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+    font-size: 16px;
+  }
+
+  .sdh{
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-left: 50px;
+  }
+
+  .sdh a{
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin-left: -50px;
+    text-decoration: none;
+    color: blue;
+  }
+
+  .in-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 500px;
+    background: white;
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.69);
+    border-radius: 10px;
+}
+
+.in-container label, .in-container input{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+  }
+
+  .in-container input{
+    width: 82%;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .a1 {
+    font-family: 'Poppins';
+    color: blue;
+    padding-left: 550px;
+    text-decoration: none;
+  }
+  
+  .masuk-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 5px 30px;
+    background-color: transparent;
+    border: 2px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .masuk-button a {
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+  }
+
+  .a2 {
+    font-family: 'Poppins';
+    color: blue;
+    text-decoration: none;
+  }
+
+  .tengah {
+    flex: content;
+  }
